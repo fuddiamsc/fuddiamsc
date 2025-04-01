@@ -1,168 +1,292 @@
-/* General Styles */
+/* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     line-height: 1.6;
     color: #333;
+    background-color: #fff; /* Fondo blanco para la página */
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50; /* Verde */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #367C39;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .section {
-    padding: 50px 0;
-}
-
-.section h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #555;
+    padding: 60px 0;
 }
 
 .bg-light {
     background-color: #f9f9f9;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    max-width: 1200px;
-}
-
-/* Header & Navigation */
-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/hero.jpg') no-repeat center center/cover;
-    color: #fff;
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
     text-align: center;
-    padding: 100px 0;
+    color: #555;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.3);
-    position: fixed; /* Fixed navbar */
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
     z-index: 100;
 }
 
-.logo img {
-    width: 150px;
-}
-
-.nav-links {
+header .container {
     display: flex;
-    justify-content: space-around;
-    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.nav-links a {
-    color: #fff;
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
     text-decoration: none;
-    transition: color 0.3s;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-    color: #ccc;
+header nav ul li a:hover {
+    color: #007bff;
 }
 
-.hero h1 {
+.donar-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.donar-btn:hover {
+    background-color: #0056b3;
+}
+
+.donar-btn.large {
+    padding: 15px 30px;
+    font-size: 1.2em;
+}
+
+/* Hero Section */
+#banner.hero {
+    background-color: #e9ecef;
+    padding: 80px 0;
+}
+
+#banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-content h1 {
     font-size: 3em;
     margin-bottom: 20px;
+    color: #333;
 }
 
-.hero p {
+.hero-content p {
     font-size: 1.2em;
+    color: #666;
     margin-bottom: 30px;
 }
 
-/* "Quienes Somos" Section */
-#quienes-somos .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.hero-image {
+    flex: 1;
 }
 
-#quienes-somos .text-col {
-    width: 50%;
-    padding-right: 20px;
-}
-
-#quienes-somos .img-col {
-    width: 50%;
-}
-
-/* "Qué Hacemos" Section */
-#que-hacemos .container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Allow programs to wrap on smaller screens */
-}
-
-#que-hacemos .program {
-    width: 30%;
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
+.hero-image img {
+    max-width: 100%;
+    height: auto;
     border-radius: 5px;
-    transition: transform 0.3s;
 }
 
-#que-hacemos .program:hover {
-    transform: translateY(-5px);
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#que-hacemos .program i {
-    font-size: 3em;
-    color: #4CAF50;
-    margin-bottom: 10px;
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
 }
 
-/* "Voluntariado" Section */
-#voluntariado .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.btn-primary:hover {
+    background-color: #0056b3;
 }
 
-#voluntariado .text-col {
-    width: 50%;
-    padding-right: 20px;
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
 }
 
-#voluntariado .img-col {
-    width: 50%;
+.btn-secondary:hover {
+    background-color: #545b62;
 }
 
-/* "Donar" Section */
-#donar .container {
+/* Proyectos Section */
+#proyectos .proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.proyecto {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     text-align: center;
+}
+
+.proyecto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.proyecto h3 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.proyecto p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Noticias Section */
+#noticias .noticias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.noticia {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.noticia h3 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.noticia p {
+    color: #777;
+}
+
+/* Voluntariado Section */
+#voluntariado p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#voluntariado .btn-primary {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+}
+
+/* Donaciones Section */
+#donaciones p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#donaciones .donar-btn.large {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Contacto Section */
+#contacto .contacto-info {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#contacto .contacto-info p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#contacto .formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contacto .formulario-contacto input,
+#contacto .formulario-contacto textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contacto .formulario-contacto textarea {
+    min-height: 150px;
+}
+
+#contacto .formulario-contacto button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#contacto .formulario-contacto button[type="submit"]:hover {
+    background-color: #1e7e34;
 }
 
 /* Footer */
@@ -175,137 +299,85 @@ footer {
 
 footer .container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer .contact-info,
-footer .social-media {
-    width: 40%;
-    margin-bottom: 20px;
+footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-footer .social-media a {
-    color: #fff;
-    font-size: 1.5em;
-    margin: 0 10px;
+footer nav ul li {
+    margin-left: 20px;
+}
+
+footer nav ul li a {
     text-decoration: none;
-    transition: color 0.3s;
+    color: #eee;
+    transition: color 0.3s ease;
 }
 
-footer .social-media a:hover {
-    color: #ccc;
+footer nav ul li a:hover {
+    color: #fff;
 }
 
-footer .copyright {
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid #555;
-}
-
-/* Mobile Navigation (Burger Menu) */
-.burger {
-    display: none;
-    cursor: pointer;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-/* Media Queries for Responsiveness */
-@media screen and (max-width: 768px) {
-    /* General */
-    .container {
-        width: 90%;
-    }
-
-    /* Navigation */
-    .nav-links {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: #333;
-        display: flex;
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
         flex-direction: column;
         align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        text-align: center;
     }
 
-    .nav-links li {
-        opacity: 0;
+    header .logo {
+        margin-bottom: 15px;
     }
 
-    .burger {
-        display: block;
-    }
-
-    /* Sections */
-    #quienes-somos .container,
-    #voluntariado .container {
+    header nav ul {
         flex-direction: column;
         text-align: center;
     }
 
-    #quienes-somos .text-col,
-    #quienes-somos .img-col,
-    #voluntariado .text-col,
-    #voluntariado .img-col {
-        width: 100%;
+    header nav ul li {
+        margin: 10px 0;
     }
 
-    #que-hacemos .container {
+    #banner .container {
         flex-direction: column;
+        text-align: center;
     }
 
-    #que-hacemos .program {
-        width: 80%; /* Make programs wider on small screens */
-        margin: 0 auto 20px; /* Center and add margin */
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 30px;
     }
 
-    /* Footer */
+    #proyectos .proyectos-grid,
+    #noticias .noticias-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .contacto-info {
+        text-align: left;
+    }
+
+    .formulario-contacto {
+        max-width: 100%;
+    }
+
     footer .container {
         flex-direction: column;
         text-align: center;
     }
 
-    footer .contact-info,
-    footer .social-media {
-        width: 100%;
+    footer nav ul {
+        flex-direction: column;
     }
-}
 
-/* Burger Animation */
-.nav-active {
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
+    footer nav ul li {
+        margin: 10px 0;
     }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
 }
