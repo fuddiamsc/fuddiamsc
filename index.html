@@ -3,210 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundación por los Derechos y Dignidad de los Adultos Mayores</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>FUDDIAM - Fundación por los Derechos y Dignidad de los Adultos Mayores</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts (Example: Poppins) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header>
-        <div class="container">
-            <a href="/" class="logo">
-                <img src="src/img/logo.png" alt="Logo de la Fundación">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#noticias">Noticias y Eventos</a></li>
-                    <li><a href="#voluntariado">Voluntariado</a></li>
-                    <li><a href="#donaciones">Donaciones</a></li>
+<body style="background: url('background-inicio.jpeg') no-repeat center center fixed; background-size: cover;">
+
+    <!-- Header Section -->
+    <header class="site-header sticky">
+        <div class="container header-container">
+            <div class="logo">
+               <a href="#"><img src="Logo-fuddiam.jpg" alt="FUDDIAM Logo" width="90" height="80" style="border-radius: 50%;"></a> 
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                    <li><a href="#que-hacemos">Qué Hacemos</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
-            <button class="donar-btn">Donar</button>
+            <!-- Botón de menú para móviles -->
+            <button class="mobile-nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
-    <section id="banner" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Defendiendo los Derechos, Celebrando la Dignidad de los Adultos Mayores en [Nombre de tu País/Región]</h1>
-                <p>En [Nombre de tu Fundación], trabajamos incansablemente para asegurar que los adultos mayores vivan con respeto, seguridad y oportunidades.</p>
-                <a href="#proyectos" class="btn btn-primary">Conoce Nuestra Labor</a>
-            </div>
-            <div class="hero-image">
-                <img src="src/img/banner.jpg" alt="Adultos mayores sonriendo">
-            </div>
-        </div>
-    </section>
+    <!-- Mobile Navigation (Hidden by default) -->
+    <nav class="mobile-nav">
+        <button class="mobile-nav-close" aria-label="Close Navigation">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#quienes-somos">Quiénes Somos</a></li>
+            <li><a href="#que-hacemos">Qué Hacemos</a></li>
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#donar" class="btn btn-primary">Donar</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-overlay"></div>
+    <main>
 
-    <section id="nosotros" class="section">
-        <div class="container">
-            <h2>Nuestra Misión y Visión</h2>
-            <div class="nosotros-content">
-                <p>Somos una organización comprometida con la promoción y protección de los derechos y la dignidad de los adultos mayores en [Nombre de tu País/Región]. Creemos firmemente en una sociedad donde la edad sea celebrada y no sea una barrera para la participación plena.</p>
-                <h3>Nuestra Misión</h3>
-                <p>Empoderar a los adultos mayores a través de la defensa de sus derechos, la provisión de apoyo integral y la creación de conciencia sobre sus necesidades y contribuciones a la sociedad.</p>
-                <h3>Nuestra Visión</h3>
-                <p>Visualizamos un futuro donde cada adulto mayor en [Nombre de tu País/Región] viva con dignidad, respeto, seguridad y tenga acceso a las oportunidades necesarias para una vida plena y saludable.</p>
-                <p><strong>Nuestros Valores:</strong> Respeto, Dignidad, Justicia, Empatía, Colaboración.</p>
-                <p><strong>Nuestra Historia:</strong> [Breve resumen de la historia de la fundación, puedes añadir más detalles en una subpágina si es necesario].</p>
-                <p><strong>Nuestro Equipo:</strong> [Presentación breve de los miembros clave, puedes añadir más detalles en una subpágina si es necesario].</p>
-                <p><strong>Transparencia:</strong> [Información sobre la transparencia de la fundación, informes anuales, etc., puedes añadir más detalles en una subpágina si es necesario].</p>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-content container">
+                <h1>Defendiendo los Derechos y la Dignidad de los Adultos Mayores</h1>
+                <p>Trabajamos por un presente y futuro donde cada persona mayor viva con plenitud, respeto y autonomía.</p>
+                <a href="#quienes-somos" class="btn btn-secondary">Conoce Más</a>
             </div>
-        </div>
-    </section>
+            <div class="hero-overlay"></div>
+        </section>
 
-    <section id="proyectos" class="section bg-light">
-        <div class="container">
-            <h2>Nuestros Proyectos en Acción</h2>
-            <p class="section-description">A través de nuestros diversos proyectos, abordamos las necesidades más apremiantes de los adultos mayores en [Nombre de tu País/Región].</p>
-            <div class="proyectos-grid">
-                <div class="proyecto">
-                    <img src="img/proyecto1.jpg" alt="Proyecto de Apoyo Domiciliario">
-                    <h3>Programa de Apoyo Domiciliario</h3>
-                    <p>Brindamos asistencia y acompañamiento a adultos mayores que necesitan apoyo en sus hogares, mejorando su calidad de vida y permitiéndoles mantener su independencia.</p>
-                    <a href="#" class="btn btn-secondary">Leer más</a>
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyecto2.jpg" alt="Talleres de Envejecimiento Activo">
-                    <h3>Talleres de Envejecimiento Activo</h3>
-                    <p>Organizamos talleres y actividades que promueven la salud física y mental, la participación social y el aprendizaje continuo entre los adultos mayores.</p>
-                    <a href="#" class="btn btn-secondary">Leer más</a>
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyecto3.jpg" alt="Asesoría Legal para Adultos Mayores">
-                    <h3>Asesoría Legal para Adultos Mayores</h3>
-                    <p>Ofrecemos asesoramiento legal gratuito y representación a adultos mayores que enfrentan problemas legales relacionados con sus derechos.</p>
-                    <a href="#" class="btn btn-secondary">Leer más</a>
-                </div>
-                </div>
-                <div class="proyectos-grid">
-                <div class="proyecto">
-                    <img src="img/proyecto4.jpg" alt="Proyecto de Combate al Aislamiento Social">
-                    <h3>Proyecto de Combate al Aislamiento Social</h3>
-                    <p>Implementamos iniciativas para conectar a los adultos mayores, fomentar la creación de redes de apoyo y reducir la soledad.</p>
-                    <a href="#" class="btn btn-secondary">Leer más</a>
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyecto5.jpg" alt="Programa de Capacitación para Cuidadores">
-                    <h3>Programa de Capacitación para Cuidadores</h3>
-                    <p>Ofrecemos capacitación y apoyo a familiares y profesionales que cuidan de adultos mayores, mejorando la calidad del cuidado.</p>
-                    <a href="#" class="btn btn-secondary">Leer más</a>
-                </div>
-                <div class="proyecto">
-                    <img src="img/proyecto6.jpg" alt="Proyecto de Promoción de la Salud Financiera">
-                    <h3>Proyecto de Promoción de la Salud Financiera</h3>
-                    <p>Brindamos herramientas y recursos para ayudar a los adultos mayores a gestionar sus finanzas, prevenir fraudes y asegurar su bienestar económico.</p>
-                    <a href="#" class="btn btn-secondary">Leer más</a>
+        <!-- About Us Section -->
+        <section id="quienes-somos" class="content-section bg-light">
+            <div class="container">
+                <h2>Quiénes Somos</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>FUDDIAM (Fundación por los Derechos y Dignidad de los Adultos Mayores) es una organización sin fines de lucro comprometida con la promoción y protección de los derechos humanos de las personas mayores.</p>
+                        <p>Nuestra misión es construir una sociedad inclusiva que valore la experiencia y sabiduría de nuestros mayores, asegurando su bienestar, participación activa y acceso a oportunidades.</ Creemos firmemente en la dignidad inherente a cada etapa de la vida.</p>
+                        <a href="#contacto" class="btn btn-outline">Contáctanos</a>
+                    </div>
+                    <div class="about-image">
+                        <!-- Replace with an actual image -->
+                        <img src="abuela2.png" alt="Adultos mayores sonriendo">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="noticias" class="section">
-        <div class="container">
-            <h2>Noticias y Eventos</h2>
-            <div class="noticias-grid">
-                <div class="noticia">
-                    <img src="img/noticia1.jpg" alt="Noticia sobre derechos">
-                    <h3>Última Noticia: Avanzan Leyes para Proteger los Derechos de los Adultos Mayores</h3>
-                    <p>Detalles sobre los recientes avances legislativos que buscan fortalecer la protección de los derechos de los adultos mayores en nuestra región.</p>
-                    <a href="#">Leer más</a>
-                </div>
-                <div class="noticia">
-                    <img src="img/evento1.jpg" alt="Evento benéfico">
-                    <h3>Próximo Evento Benéfico: Cena de Gala por la Dignidad de los Adultos Mayores</h3>
-                    <p>Únete a nosotros en nuestra cena anual de gala para recaudar fondos y apoyar nuestros programas. Información sobre la fecha, lugar y cómo adquirir entradas.</p>
-                    <a href="#">Más información</a>
-                </div>
-                <div class="noticia">
-                    <img src="img/noticia2.jpg" alt="Artículo sobre salud">
-                    <h3>Artículo: Consejos para Mantener una Buena Salud Mental en la Tercera Edad</h3>
-                    <p>Expertos comparten estrategias y consejos prácticos para que los adultos mayores cuiden su bienestar emocional.</p>
-                    <a href="#">Leer más</a>
-                </div>
-            </div>
-            <div class="noticias-grid">
-                <div class="noticia">
-                    <img src="img/evento2.jpg" alt="Taller para cuidadores">
-                    <h3>Taller Gratuito: Cuidado Integral del Adulto Mayor Dependiente</h3>
-                    <p>Invitamos a cuidadores familiares y profesionales a participar en este taller intensivo para adquirir habilidades y conocimientos esenciales.</p>
-                    <a href="#">Inscribirse</a>
-                </div>
-                <div class="noticia">
-                    <img src="img/noticia3.jpg" alt="Logro de la fundación">
-                    <h3>Logro: Nuestra Fundación Amplía su Programa de Apoyo Domiciliario</h3>
-                    <p>Gracias al apoyo de nuestros donantes, hemos podido expandir nuestro alcance y brindar asistencia a más adultos mayores en sus hogares.</p>
-                    <a href="#">Leer más</a>
-                </div>
-                <div class="noticia">
-                    <img src="img/evento3.jpg" alt="Campaña de concientización">
-                    <h3>Campaña de Concientización: Valoremos la Experiencia de los Adultos Mayores</h3>
-                    <p>Únete a nuestra campaña en redes sociales para compartir mensajes que resalten la importancia y el valor de los adultos mayores en nuestra sociedad.</p>
-                    <a href="#">Participar</a>
+        <!-- What We Do Section -->
+        <section id="que-hacemos" class="content-section">
+            <div class="container">
+                <h2>Qué Hacemos</h2>
+                <p class="section-subtitle">Nuestras áreas de acción para impactar positivamente la vida de los adultos mayores:</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-gavel fa-3x service-icon"></i>
+                        <h3>Asesoría Legal</h3>
+                        <p>Ofrecemos orientación y acompañamiento legal gratuito en temas relevantes para adultos mayores.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-chalkboard-teacher fa-3x service-icon"></i>
+                        <h3>Talleres y Capacitación</h3>
+                        <p>Desarrollamos programas educativos sobre derechos, salud, tecnología y bienestar.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-bullhorn fa-3x service-icon"></i>
+                        <h3>Incidencia y Sensibilización</h3>
+                        <p>Promovemos políticas públicas justas y creamos conciencia sobre los desafíos del envejecimiento.</p>
+                    </div>
+                     <div class="service-card">
+                        <i class="fas fa-hands-helping fa-3x service-icon"></i>
+                        <h3>Apoyo Psicosocial</h3>
+                        <p>Brindamos espacios de escucha y acompañamiento para fortalecer el bienestar emocional.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="voluntariado" class="section bg-light">
-        <div class="container">
-            <h2>Únete a Nuestra Causa: Sé Voluntario</h2>
-            <p>Tu tiempo y talento pueden marcar una gran diferencia en la vida de los adultos mayores. Descubre cómo puedes contribuir como voluntario en [Nombre de tu Fundación].</p>
-            <div class="voluntariado-info">
-                <p><strong>Oportunidades de Voluntariado:</strong> Acompañamiento, apoyo en eventos, tareas administrativas, talleres, etc.</p>
-                <p><strong>Lo que Buscamos en un Voluntario:</strong> Compromiso, empatía, respeto, habilidades de comunicación.</p>
-                <p><strong>Beneficios de Ser Voluntario:</strong> Experiencia gratificante, conexión con la comunidad, desarrollo personal.</p>
+        <!-- News Section -->
+        <section id="noticias" class="content-section bg-light">
+             <div class="container">
+                <h2>Últimas Noticias</h2>
+                 <div class="news-grid">
+                    <article class="news-card">
+                        <img src="envento2.png" alt="Imagen noticia 1">
+                        <div class="news-content">
+                             <span class="news-date">15 Julio, 2024</span>
+                            <h3>Nuevo programa de voluntariado intergeneracional</h3>
+                            <p>Lanzamos una iniciativa para conectar jóvenes y adultos mayores...</p>
+                            <a href="#" class="read-more">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="envento3.png" alt="Imagen noticia 2">
+                         <div class="news-content">
+                            <span class="news-date">05 Julio, 2024</span>
+                            <h3>Informe sobre acceso a la salud para mayores</h3>
+                            <p>Presentamos los resultados de nuestra última investigación sobre barreras...</p>
+                             <a href="#" class="read-more">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="noticia3.png" alt="Imagen noticia 3">
+                         <div class="news-content">
+                            <span class="news-date">20 Junio, 2024</span>
+                            <h3>FUDDIAM participa en foro internacional</h3>
+                            <p>Compartimos nuestra experiencia en la defensa de los derechos...</p>
+                             <a href="#" class="read-more">Leer más →</a>
+                        </div>
+                    </article>
+                 </div>
+                 <div class="text-center" style="margin-top: 30px;">
+                     <a href="#" class="btn btn-secondary">Ver Todas las Noticias</a>
+                 </div>
             </div>
-            <a href="#" class="btn btn-primary">Inscríbete como voluntario</a>
-        </div>
-    </section>
+        </section>
 
-    <section id="donaciones" class="section">
-        <div class="container">
-            <h2>Apoya Nuestra Labor: Dona Hoy</h2>
-            <p>Tu generosidad nos permite continuar brindando apoyo vital a los adultos mayores. Explora las diferentes formas en que puedes donar y el impacto que tu contribución puede tener.</p>
-            <div class="donaciones-info">
-                <p><strong>Formas de Donar:</strong> Donación en línea, transferencia bancaria, donación mensual, donación en especie.</p>
-                <p><strong>Impacto de tu Donación:</strong> Con $50 podemos proporcionar una semana de comidas a un adulto mayor vulnerable. Con $100 podemos financiar una sesión de asesoría legal.</p>
+         <!-- Call to Action / Donate Section -->
+        <section id="donar" class="cta-section">
+            <div class="container text-center">
+                <h2>¡Tu Apoyo Hace la Diferencia!</h2>
+                <p>Con tu donación, podemos seguir defendiendo los derechos y la dignidad de miles de adultos mayores. Cada contribución cuenta.</p>
+                <a href="#" class="btn btn-primary btn-lg">Dona Ahora</a>
+                <a href="#contacto" class="btn btn-outline-light btn-lg">Sé Voluntario</a>
             </div>
-            <button class="donar-btn large">Donar Ahora</button>
-        </div>
-    </section>
-
-    <section id="contacto" class="section bg-light">
-        <div class="container">
-            <h2>Contáctanos: Estamos Aquí para Ayudarte</h2>
-            <p>Ponte en contacto con nosotros para cualquier consulta o colaboración.</p>
-            <div class="contacto-info">
-                <p><strong>Dirección:</strong> [Tu Dirección]</p>
-                <p><strong>Teléfono:</strong> [Tu Número de Teléfono]</p>
-                <p><strong>Email:</strong> [Tu Correo Electrónico]</p>
+        </section>
+        <!-- Eventos Section -->
+        <section id="eventos" class="content-section">
+            <div class="container">
+                <h2>Eventos</h2>
+                <div class="carousel"> 
+                    <button class="carousel-button prev" aria-label="Anterior">&#10094;</button>
+                    <button class="carousel-button next" aria-label="Siguiente">&#10095;</button>
+                    <div class="carousel-images">
+                        <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0098.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
+                        <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0100.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
+                        <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0101.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
+                        <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0103.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
+                        <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0104.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
+                        <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0105.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
+                        <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0106.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
+                        <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0107.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
+                 </div>
+               
+                </div>
             </div>
-            <form class="formulario-contacto">
-                <input type="text" placeholder="Nombre">
-                <input type="email" placeholder="Correo Electrónico">
-                <textarea placeholder="Mensaje"></textarea>
-                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-            </form>
+        </section>
+        <!-- Video Section 
+        <div class="video-container">
+            <video controls class="responsive-video">
+                <source src="https://github.com/fuddiamsc/fuddiam/blob/main/VID-20250404-WA0135.mp4?raw=true" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
         </div>
-    </section>
+        -->
+        <!-- Contact Section -->
+        <section id="contacto" class="content-section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Ponte en contacto</h3>
+                        <p style="color: white;">Si tienes preguntas, necesitas ayuda o quieres colaborar, no dudes en escribirnos o llamarnos.</p>
+                        <p style="color: white;"><i class="fas fa-map-marker-alt"></i> Haina, San Cristobal, República Dominicana</p>
+                        <p style="color: white;"><i class="fas fa-phone"></i> +1.809.512.2377</p>
+                        <p style="color: white;"><i class="fas fa-envelope"></i> fuddiamsc@gmail.com</p>
+                         <div class="social-links">
+                            <a href="https://www.facebook.com/people/Fundaci%C3%B3n-Fuddiam/pfbid0XgqqjcAB2fNRbJZ64GsWyJg1PZkweY1zjUqGkTEdT98CmBo2BQUi1b9wZityJaol/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Envíanos un mensaje</h3>
+                        <!-- modify this form HTML and place wherever you want your form -->
+                        <form
+                            action="https://formspree.io/f/xldjvgrp"
+                            method="POST"
+                        >
+                            
+                        <!-- Contact form (example) -->
+                        
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Fundación por los Derechos y Dignidad de los Adultos Mayores. Todos los derechos reservados.</p>
-            <nav>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-about">
+                <h4>FUDDIAM</h4>
+                <p>Fundación por los Derechos y Dignidad de los Adultos Mayores.</p>
+                 <div class="social-links-footer">
+                    <a href="https://www.facebook.com/people/Fundaci%C3%B3n-Fuddiam/pfbid0XgqqjcAB2fNRbJZ64GsWyJg1PZkweY1zjUqGkTEdT98CmBo2BQUi1b9wZityJaol/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+             <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
                 <ul>
+                    <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                    <li><a href="#que-hacemos">Qué Hacemos</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#eventos">Evento</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                     <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Términos y Condiciones</a></li>
                 </ul>
-            </nav>
+            </div>
+            <div class="footer-contact">
+                 <h4>Contacto</h4>
+                 <p><i class="fas fa-map-marker-alt"></i> Haina, San Cristobal, República Dominicana</p>
+                 <p><i class="fas fa-phone"></i> +1.809.512.2377</p>
+                 <p><i class="fas fa-envelope"></i> fuddiamsc@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2025 © <span id="current-year"></span> FUDDIAM. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <script src="src/js/script.js"></script>
+    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
